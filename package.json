@@ -1,0 +1,41 @@
+{
+  "name": "sensitive-words-mf",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch \"npm run build \" src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcinfuja/sensitive-words-mf.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Marcin Fuja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcinfuja/sensitive-words-mf/issues"
+  },
+  "homepage": "https://github.com/marcinfuja/sensitive-words-mf#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "watch": "^1.0.1"
+  }
+}
